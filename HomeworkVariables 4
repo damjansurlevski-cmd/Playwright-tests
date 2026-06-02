@@ -1,0 +1,21 @@
+const bill: number = 54.0;
+const tipRate: number = 0.15;
+const numberofFriends: number = 3;
+
+const tipAmount: number = bill * tipRate;
+const grandTotal: number = bill + tipAmount;
+const eachPersonPays: number = grandTotal / numberofFriends;
+
+console.log("\n3. Dinner bill split:");
+console.log("Tip amount:", tipAmount.toFixed(2), "€");
+console.log("Grand total:", grandTotal.toFixed(2), "€");
+console.log("Each person pays:", eachPersonPays.toFixed(2), "€");
+
+// 4. Check if number is positive or negative
+const numberToCheck: number = -7;
+
+if (numberToCheck >= 0) {
+  console.log(`\n4. The number ${numberToCheck} is positive.`);
+} else {
+  console.log(`\n4. The number ${numberToCheck} is negative.`);
+}
