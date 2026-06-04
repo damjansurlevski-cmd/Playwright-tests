@@ -1,0 +1,46 @@
+Hi, I need help to create my Playwright homework project.
+
+Please create a new Playwright TypeScript project and name it PlaywrightMcp.
+I need to use Playwright MCP, so please set up all needed dependencies and configuration for Playwright and Playwright MCP.
+Use the SauceDemo page:
+https://www.saucedemo.com
+
+Please do not write everything in one test file. I need the project to use Page Object Model, because this is part of the homework. So please create page files for the login page, inventory page, cart page, checkout page, and any other page that is needed.
+
+Please keep the code simple and beginner-friendly. Do not make it too advanced. Use clear class names, simple methods, and easy locators. Please use data-test locators when they are available.
+
+I need one login test that uses a data-driven approach and tries all available SauceDemo users:
+standard_user
+locked_out_user
+problem_user
+performance_glitch_user
+error_user
+visual_user
+
+Use the same password for all users:
+secret_sauce
+
+In this login test, please check both successful and unsuccessful login. The locked_out_user should fail and the error message should be checked. The other users should log in successfully and the test should check that the login was successful. Please keep this inside the same login test.
+
+I also need one full end-to-end test in the same project. The test should do this flow:
+
+Open SauceDemo.
+Log in with standard_user and secret_sauce.
+Check that login is successful.
+Add Sauce Labs Backpack to the cart.
+Check that the product is added to the cart.
+Open the cart.
+Go to checkout.
+Fill in first name, last name, and postal code.
+Click Continue.
+Check that Payment Information, Shipping Information, and Price Total are shown.
+Finish the order.
+Check both success messages after the order is completed.
+Go back to the home page.
+Check that I am back on the home page.
+Open the menu and sign out.
+Check that I am redirected back to the login page.
+
+Please run the tests after creating the code. If something fails, fix only what is needed, like locator or waiting problems.
+
+Important: please do not add comments like homework task descriptions before each part of the code. I want the final code to look like normal beginner Playwright code, not like copied homework instructions.

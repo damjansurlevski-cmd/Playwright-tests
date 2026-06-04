@@ -1,0 +1,16 @@
+{
+  "name": "playwright-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "mcp": "npx @playwright/mcp@latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@playwright/mcp": "latest",
+    "typescript": "latest"
+  }
+}
